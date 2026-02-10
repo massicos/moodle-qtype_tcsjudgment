@@ -20,6 +20,9 @@ Feature: Test creating a Concordance of judgment question
 
   @javascript
   Scenario: Create a Concordance of judgment question.
+    Given I press "Add"
+    And I set the field "Question bank name" to "Question bank name test 2"
+    And I press "Save and display"
     When I add a "Concordance of judgment" question filling the form with:
       | Question name              | TCS-002                            |
       | Question text              | Here is the question               |

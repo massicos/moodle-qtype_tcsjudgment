@@ -42,7 +42,6 @@ require_once($CFG->dirroot . '/question/engine/tests/helpers.php');
  * @covers \qtype_tcsjudgment_question
  */
 final class question_test extends \advanced_testcase {
-
     public function test_questiondata(): void {
         $question = test_question_maker::get_question_data('tcsjudgment');
 

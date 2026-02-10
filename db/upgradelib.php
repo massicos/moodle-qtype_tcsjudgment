@@ -33,5 +33,4 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class qtype_tcsjudgment_qe2_attempt_updater extends qtype_tcs_qe2_attempt_updater {
-
 }
