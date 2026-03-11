@@ -26,7 +26,8 @@ Feature: Preview a Concordance of judgment question
 
   @javascript
   Scenario: Preview a Concordance of judgment question.
-    Given I choose "Preview" action for "TCS-002" in the question bank
+    Given I click on "System shared question bank" "link"
+    And I choose "Preview" action for "TCS-002" in the question bank
     And I expand all fieldsets
     When I set the field "How questions behave" to "Immediate feedback"
     And I press "Save preview options and start again"

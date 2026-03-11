@@ -33,7 +33,6 @@ function xmldb_qtype_tcsjudgment_upgrade($oldversion) {
     $dbman = $DB->get_manager();
 
     if ($oldversion < 2021030100) {
-
         // Labelfeedback.
         $table = new xmldb_table('qtype_tcsjudgment_options');
 

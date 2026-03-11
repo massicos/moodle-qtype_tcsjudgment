@@ -27,6 +27,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 require_once($CFG->dirroot . '/question/type/tcs/renderer.php');
+require_once(__DIR__ . '/format_plain_renderer.php');
 
 
 /**
@@ -37,29 +38,8 @@ require_once($CFG->dirroot . '/question/type/tcs/renderer.php');
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class qtype_tcsjudgment_renderer extends qtype_tcs_renderer {
-
     /**
      * @var string The qtype name.
      */
     protected static $qtypename = 'tcsjudgment';
-}
-
-/**
- * A format renderer for tcs judgment questions where the student should use a plain input box.
- *
- * @package qtype_tcsjudgment
- * @copyright  2020 Université  de Montréal.
- * @author     Issam Taboubi <issam.taboubi@umontreal.ca>
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class qtype_tcsjudgment_format_plain_renderer extends qtype_tcs_format_plain_renderer {
-
-    /**
-     * Return class name.
-     *
-     * @return string class name
-     */
-    protected function class_name() {
-        return 'qtype_tcsjudgment_plain';
-    }
 }

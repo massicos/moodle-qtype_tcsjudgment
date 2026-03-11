@@ -35,7 +35,6 @@ require_once($CFG->dirroot . '/question/type/tcs/edit_tcs_form.php');
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class qtype_tcsjudgment_edit_form extends qtype_tcs_edit_form {
-
     /**
      * @var int The default answers number.
      */

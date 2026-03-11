@@ -25,7 +25,6 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class restore_qtype_tcsjudgment_plugin extends restore_qtype_tcs_plugin {
-
     /**
      * @var string The qtype name.
      */

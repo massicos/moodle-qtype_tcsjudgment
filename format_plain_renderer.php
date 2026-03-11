@@ -15,33 +15,29 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Provides the information to backup Concordance questions.
+ * tcs judgment question format plain renderer class.
  *
- * @package    qtype_tcsjudgment
- * @subpackage backup-moodle2
- * @category   backup
- * @copyright  2020 Université de Montréal
- * @author     Marie-Eve Lévesque <marie-eve.levesque.8@umontreal.ca>
+ * @package qtype_tcsjudgment
+ * @copyright  2020 Université  de Montréal.
+ * @author     Issam Taboubi <issam.taboubi@umontreal.ca>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class backup_qtype_tcsjudgment_plugin extends backup_qtype_tcs_plugin {
-    /**
-     * @var string The qtype name.
-     */
-    protected static $qtypename = 'tcsjudgment';
 
+/**
+ * A format renderer for tcs judgment questions where the student should use a plain input box.
+ *
+ * @package qtype_tcsjudgment
+ * @copyright  2020 Université  de Montréal.
+ * @author     Issam Taboubi <issam.taboubi@umontreal.ca>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+class qtype_tcsjudgment_format_plain_renderer extends qtype_tcs_format_plain_renderer {
     /**
-     * @var string The tcs table name.
+     * Return class name.
+     *
+     * @return string class name
      */
-    protected static $tablename = 'qtype_tcsjudgment';
-
-    /**
-     * @var array The additional columns names.
-     */
-    protected static $addcolumnsnames = [];
-
-    /**
-     * @var array The additional file area mapping names.
-     */
-    protected static $addfileareamapnames = [];
+    protected function class_name() {
+        return 'qtype_tcsjudgment_plain';
+    }
 }

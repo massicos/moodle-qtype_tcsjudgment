@@ -40,7 +40,6 @@ require_once($CFG->dirroot . '/question/type/tcsjudgment/question.php');
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class qtype_tcsjudgment extends qtype_tcs {
-
     /**
      * @var string The qtype name.
      */
@@ -62,5 +61,4 @@ class qtype_tcsjudgment extends qtype_tcs {
         question_bank::load_question_definition_classes($this->name());
         return new qtype_tcsjudgment_question();
     }
-
 }
