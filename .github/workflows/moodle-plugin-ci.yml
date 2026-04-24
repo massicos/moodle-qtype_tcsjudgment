@@ -134,14 +134,14 @@ jobs:
         if: ${{ !cancelled() }}
         run: moodle-plugin-ci grunt --max-lint-warnings 0
 
-      #- name: PHPUnit tests
-      #  if: ${{ !cancelled() }}
-      #  run: moodle-plugin-ci phpunit --fail-on-warning
+      - name: PHPUnit tests
+        if: ${{ !cancelled() }}
+        run: moodle-plugin-ci phpunit --fail-on-warning
 
-      #- name: Behat features
-      #  id: behat
-      #  if: ${{ !cancelled() }}
-      #  run: moodle-plugin-ci behat --profile chrome --scss-deprecations
+      - name: Behat features
+        id: behat
+        if: ${{ !cancelled() }}
+        run: moodle-plugin-ci behat --profile chrome --scss-deprecations
 
       - name: Mark cancelled jobs as failed.
         if: ${{ cancelled() }}
